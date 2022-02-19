@@ -10,7 +10,10 @@ public class DesafioTres {
     public int desafio(String input) {
         int tamAnagrama;
         int cont = 0;
+        //iniciando do 1 até o tamanho - 1
         for (tamAnagrama = 1; tamAnagrama <= input.length() - 1; tamAnagrama++) {
+            //vamos comparar do 0 até o tamanho da entrada menos o tamanho do anagrama a ser comparado,
+            //ou seja, se a entrada for 5 e o tamAnagrama for 1 esse loop só vai parar quando o i for 5
             for (int i = 0; i <= input.length() - tamAnagrama; i++) {
                 for (int j = input.length(); j > i + tamAnagrama; j--) {
                     if (anagrama(input.substring(i, i + tamAnagrama), input.substring(j - tamAnagrama, j))) {

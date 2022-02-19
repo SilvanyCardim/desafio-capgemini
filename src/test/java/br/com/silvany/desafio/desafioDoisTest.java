@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class desafioDoisTest {
-    //TODO adicionar mais testes
+
     @Test
     public void desafioCerto() {
         DesafioDois a = new DesafioDois();
